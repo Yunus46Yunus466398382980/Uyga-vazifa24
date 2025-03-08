@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__list{
+    display: flex;
+    gap: 15px;
+}
+.nav__list a{
+    color: white;
+    transition: 0.5s;
+
+}
+.nav__list a:hover{
+    background-color: white;
+    color: #4A939B;
+    padding: 23px  18px;
+}
+
+
+.header__content{
+    background-image: url(content\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg__nav{
+
+    background-color: #4A939B;
+}
+
+.header__title{
+    color: white;
+    text-transform: uppercase;
+    animation: 2s yunka infinite;
+}
+
+.header__desc{
+    color: white;
+}
+
+
+
+.main__left {
+    width: 540px;
+    background: 
+linear-gradient(126.59deg, rgba(113, 31, 27, 0.168) 35.52%, rgba(82, 252, 255, 0.156) 68.34%);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.main__left-desc {
+    width: 510px;
+    color: #9b9b9b;
+    text-align: center;
+
+}
+
+.main__left-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.main__right {
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    background: linear-gradient(126.35deg, rgba(239, 23, 23, 0.04) 21.2%, rgba(26, 112, 111, 0.17) 82.65%);
+    width: 255px;
+    border: 1px solid #000;
+}
+
+.card__revers{
+    flex-direction: column-reverse;
+}
+
+.main__parent{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.box{
+    background-color: #4A939B;
+    width: 1540px;
+    height: 260px;
+    margin: auto;
+}
+
+.input__small{
+    width: 350px;
+    height: 34px;
+    border-radius: 6px;
+    gap: 11px;
+}
+
+.input__big{
+    width: 350px;
+    height: 86px;
+    border-radius: 6px;
+    display: block;
+}
+
+button{
+    width: 350px;
+height: 25px;
+top: 1203px;
+left: 240px;
+border-radius: 6px;
+color: white;
+    background-color: #52BFAD;
+    margin: auto;
+}
+
+.item1{
+    color: #52BFAD;
+    display: flex;
+    justify-content: center;
+}
+
+.ul,li{
+    display: flex;
+    justify-content: center;
+    
+}
+@keyframes yunka {
+    0% {
+        transform: translateY(0);
+        color: orange;
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 180deg;
+        transform: translateY(-20px);
+        background-color: black;
+        color: yellow;
+    }
+
+    100%{
+        rotate: 360deg;
+        color: violet;
+        transform: translateY(0);
+    }
+ 
+}
